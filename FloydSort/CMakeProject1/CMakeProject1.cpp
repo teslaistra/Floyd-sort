@@ -35,8 +35,15 @@ void SortArr(int arr[], int n)
 // Управляющая программа
 int main()
 {
-	int arr[] = { 12, 11, 13, 5, 6, 7 };
+	
+	int arr[] = { 0, 0, 0, 0, 0, 0 };
+	
 	int n = sizeof(arr) / sizeof(arr[0]);
+
+	for (size_t i = 0; i < n; i++)
+	{
+		arr[i] = rand();
+	}
 
 	cout << "Unsorted array is \n";
 	for (int i = 0; i < n; ++i) cout << arr[i] << " ";
